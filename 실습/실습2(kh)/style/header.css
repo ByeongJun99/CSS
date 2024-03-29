@@ -1,0 +1,52 @@
+.header{
+    border: 1px solid darkgray;
+    margin: 10px 50px;
+    width: 80%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.logo-section{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;    /*중심축*/
+    align-items: center;    /*교차축*/
+    position: relative;
+}
+
+.logo-section>img{
+    cursor: pointer;
+}
+
+#search_form{
+    margin: auto;
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#search_form>input{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+#search_form>button{
+    width: 30%;
+    height: 35px;
+    padding: 0px;
+    background-color: white;
+}
+
+#search_form>button>img{
+    width: 25px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 관련 스타일</title>
+    <style>
+        #c{
+            color: red;
+            color: #5f1b1b;
+            color: rgb(0, 0, 0); /*각 값의 최대는 255*/
+            color: rgba(0, 0, 0, 0.3)
+        }
+        #td1{text-decoration: underline;}
+        #td2{text-decoration: line-through;}
+        #td3{text-decoration: overline;}
+    </style>
+</head>
+<body>
+    <h1>텍스트 관련 스타일(text~)</h1>
+
+    <h2>color : 텍스트 색상을 지정</h2>
+    <pre id="c">
+        선택자{
+            color: 색상명 | 16진수 | rgb(r, g, b) | rgba(r, g, b, a)
+        }
+    </pre>
+
+    <h2>text-decoration: 텍스트에 줄을 긋거나 줄을 없앨 때 사용</h2>
+    <pre>
+        선택자{
+            text-decoration: none | underline | overline | line-through;
+        }
+    </pre>
+    <ul>
+        <li id="td1">텍스트 영역 아래 줄 긋기</li>
+        <li id="td2">텍스트 영역 중간에 줄 긋이</li>
+        <li id="td3">텍스트 영역 위에 줄 긋기</li>
+    </ul>
+
+    <a href="http://www.naver.com" target="_blank" style="text-decoration: none;">네이버로</a>
+
+    <hr>
+
+    <h3>text-align : 텍스트 정렬할 때 사용</h3>
+    <pre>
+        선택자{
+            text-align: left(기본값) | right | center | justify
+        }
+    </pre>
+    
+    <h4>왼쪽정렬(기본값)</h4>
+    <p style="text-align: left;">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</p>
+
+    <h4>양쪽정렬</h4>
+    <p style="text-align: justify;">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</p>
+
+    <h4>중앙정렬</h4>
+    <p style="text-align: center;">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</p>
+    
+    <h4>오른쪽정렬</h4>
+    <p style="text-align: right;">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</p>
+
+    <hr>
+
+    <h3>line-height : 줄 간격 조절할 때 사용</h3>
+    <pre>
+        선택자{
+            line-height: normal | px | em | %
+        }
+    </pre>
+
+    <h4>px 고정 단위 간격</h4>
+    <p style="line-height: 30px;">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</p>
+</body>
+</html>
